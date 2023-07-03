@@ -32,6 +32,10 @@ import java.util.UUID;
 @WebServlet(name = "MainServlet", value = "*.do")
 public class MainServlet extends HttpServlet {
 
+    public void getPushTest(){
+        System.out.println("yushu change this");
+    }
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doPost(request, response);
